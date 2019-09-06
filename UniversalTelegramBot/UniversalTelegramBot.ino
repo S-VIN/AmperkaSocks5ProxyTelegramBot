@@ -6,10 +6,10 @@ char password[] = "mega2560"; // your network key
 
 // Initialize Telegram BOT
 #define BOTtoken "954847022:AAHZDWrHM0nOpGfJNDfbvLty2HaUO5RqAX4"  // your Bot Token (Get from Botfather)
-IPAddress proxyIP(166, 62, 91, 254);
+IPAddress proxyIP(88, 198, 24, 108);
 	
 WiFiClientSecure Client;
-Socks5Proxy ProxyClient(proxyIP, 14718, Client);
+Socks5Proxy ProxyClient(proxyIP, 1080, Client);
 
 
 UniversalTelegramBot bot(BOTtoken, ProxyClient);
